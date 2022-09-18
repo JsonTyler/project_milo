@@ -105,3 +105,10 @@ a:hover, .btn-link:hover {
     #check:checked ~ .sidebar center > img {
         display: none;
     }
+
+
+@media only screen and (max-width: 700px) {
+    #check ~ .content {
+        margin-left: 36px;
+    }
+}

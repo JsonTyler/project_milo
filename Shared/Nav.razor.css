@@ -15,6 +15,7 @@
     height: 100%;
     transition: 0.5s;
     transition-property: left;
+    z-index: 999;
 }
   
   .sidebar .profile_image{
@@ -76,6 +77,10 @@
   #check:checked ~ .sidebar{
     left: -315px;
   }
+
+  #check:checked ~ .content { 
+      left: 352px;
+  }
   
   #check:checked ~ .sidebar a span{
     display: none;
@@ -92,3 +97,39 @@
         padding-top: 60px;
     }
 
+
+
+@media only screen and (max-width: 700px) {
+
+    .content {
+        margin-left: 35px;
+    }
+    
+    .sidebar {
+        left: -315px;
+    }
+
+    #check:checked ~ .sidebar {
+        left: 0;
+        z-index: 999;
+        width: 100%;
+    }
+
+        #check:checked ~ .sidebar a span {
+            display: inline;
+            z-index: 999;
+        }
+
+        #check:checked ~ .sidebar a {
+            z-index: 999;
+            font-size: 20px;
+            margin-left: 20px;
+            width: 100%;
+            padding-top: 30px;
+        }
+
+    #check:checked ~ .content {
+        left: 60px;
+    }
+
+}
