@@ -3,10 +3,17 @@
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-image: url('../img/mike-l-8Qr1ixi-rMU-unsplash.jpg');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0 0 0 / 85%), rgba(0, 0, 0, 0.8)), url(../img/26.jpg) no-repeat;
+    /*background-image: url('../img/4.jpg');*/
+    /*background-image: url('../img/10.jpg');*/
+    /*background-image: url('../img/16.jpg');*/
+    /*background-image: url('../img/19.jpg');*/
+    /*background-image: url('../img/21.jpg');*/
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    background-attachment: fixed;
+    height: 100vh;
+    line-height: 2.3rem;
 }
 
 h1:focus {
@@ -25,10 +32,6 @@ a:hover, .btn-link:hover {
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
-}
-
-.content {
-    padding-top: 1.1rem;
 }
 
 .valid.modified:not([type=checkbox]) {
@@ -79,19 +82,26 @@ a:hover, .btn-link:hover {
       font-family: "Roboto", sans-serif;
     }
 
-    .content{
-      margin-left: 250px;
-      background: url(background.png) no-repeat;
-      background-position: center;
-      background-size: cover;
-      padding: 25px;
-      transition: 0.5s;
-    }
+.content {
+    margin-left: 350px;
+    background: url(background.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 60px;
+    transition: 0.5s;
+    backdrop-filter:blur(5px);
+    font-weight: 500;
+    color: white;
+}
     
     #check:checked ~ .content{
-      margin-left: 60px;
+      margin-left: 35px;
     }
     
     #check{
       display: none;
+    }
+
+    #check:checked ~ .sidebar center > img {
+        display: none;
     }
