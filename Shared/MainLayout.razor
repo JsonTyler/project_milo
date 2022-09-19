@@ -1,5 +1,23 @@
 ﻿@inherits LayoutComponentBase
+@using project_milo.Services
 
-<Header />
+<div id="particles-js">
+</div>
 <Nav />
 @Body
+
+@code {
+
+    [Inject]
+    public ParticlesService ParticlesService { get; set; }
+
+    private async Task ShowParticles()
+    {
+        await ParticlesService.Particles();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await ShowParticles();
+    }
+}

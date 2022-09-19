@@ -1,11 +1,12 @@
-﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
 
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0 0 0 / 85%), rgba(0, 0, 0, 0.8)), url(../img/26.jpg) no-repeat;
+    font-family: nunito, sans-serif;
+    /*    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0 0 0 / 85%), rgba(0, 0, 0, 0.8)), url(../img/26.jpg) no-repeat;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
+    background: #070d34;
     background-attachment: fixed;
     height: 100vh;
     line-height: 2.3rem;
@@ -79,14 +80,11 @@ a:hover, .btn-link:hover {
 
 .content {
     margin-left: 350px;
-    background: url(background.png) no-repeat;
-    background-position: center;
-    background-size: cover;
     padding: 60px;
     transition: 0.5s;
-    backdrop-filter:blur(5px);
-    font-weight: 500;
-    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
 }
     
     #check:checked ~ .content{

@@ -4,7 +4,8 @@
 }
 
 .sidebar {
-    background: #ffffffc6;
+    font-family: nunito;
+    background: #fff;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.5px);
     -webkit-backdrop-filter: blur(4.5px);
@@ -24,13 +25,13 @@
   }
 
     .sidebar h4 {
-        color: #000;
+        color: #070d34;
         margin-top: 0;
         margin-bottom: 20px;
     }
 
     .sidebar a {
-        color: #000;
+        color: #070d34;
         display: block;
         font-weight: 800;
         width: 100%;
@@ -42,13 +43,10 @@
         transition-property: background;
     }
 
-.fa, .fas {
-    text-shadow: 1px 1px 2px black;
-}
+        .sidebar a:hover {
+            color: #d2aa37;
 
-.sidebar a:hover {
-    color: #2c8a1a;
-}
+        }
   
   .sidebar i{
     padding-right: 10px;
@@ -60,7 +58,7 @@
 
     label #sidebar_btn {
         z-index: 1;
-        color: #000;
+        color: #070d34;
         position: sticky;
         cursor: pointer;
         left: 8px;
@@ -71,7 +69,7 @@
     }
 
         label #sidebar_btn:hover {
-            color: #2c8a1a;
+            color: #d2aa37;
         }
   
   #check:checked ~ .sidebar{

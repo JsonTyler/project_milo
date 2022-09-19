@@ -1,0 +1,7 @@
+﻿.panel {
+    background: #ffffffd3;
+    color: #070d34;
+    padding: 30px;
+    backdrop-filter: blur(1px);
+    border-radius: 7px;
+}
